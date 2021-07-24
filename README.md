@@ -3,9 +3,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This project is created as the task for webMOBI Web Developer Internship position.
 
 My detail:
-Mugundan Sridhar
-s.mugundan2000@gmail.com
-9003762326
++ Mugundan Sridhar 
++ s.mugundan2000@gmail.com
++ 9003762326
 
 ## Important
 + This page is a singular page React app and contains no routing functionality.
