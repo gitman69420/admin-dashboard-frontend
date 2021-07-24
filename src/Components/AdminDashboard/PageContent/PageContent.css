@@ -1,0 +1,15 @@
+.page-content-body{
+    height:calc(100vh - 10rem);
+    width:calc(100% - 6rem);
+    border-radius:2rem;
+    /* border-style:solid;
+    border-width:1px;
+    border-color:#999; */
+    background-color:white;
+
+    /* z-index:7; */
+
+    display:grid;
+    grid-template-columns: 16rem auto;
+}
+

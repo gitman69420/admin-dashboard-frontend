@@ -1,0 +1,38 @@
+.right-sidebar-container{
+    position:relative;
+    right:0;
+    margin:0;
+    height:100%;
+    max-width:fit-content;
+    display:flex;
+    flex-direction: column;
+    flex-grow: unset;
+    box-shadow: -5px 0 5px -3px #888;
+}
+
+.profile-avatar-container{
+    height:4rem;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-avatar{
+    height:3rem;
+    width:3rem;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.icons-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    padding:0 1rem; 
+}
+
+.icons-container > div{
+    max-height:1.5rem;
+}

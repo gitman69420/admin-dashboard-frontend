@@ -1,0 +1,10 @@
+.pane-item{
+    max-height:3rem;
+    flex-grow:1;
+    display:grid;
+    grid-template-columns: 0.5rem auto;
+}
+
+.pane-item:hover{
+    display:flex;
+}

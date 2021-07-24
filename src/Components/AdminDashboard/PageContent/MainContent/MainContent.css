@@ -1,0 +1,21 @@
+.main-content-body{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    border-color: #DDD;
+    border-radius: 2rem;
+    border-style: solid;
+    border-right:1px;
+    border-top: 1px;
+    border-bottom: 1px;
+    padding:0 2rem;
+    max-height:100%;
+    overflow-y: auto;
+}
+
+.main-content-header{
+    font-size:1.5em;
+    color:purple;
+    padding-bottom: 1rem;
+    box-shadow: 0 3px 1px -3px #000000;
+}
