@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project is created as the task for webMOBI Web Developer Internship position.
+This project is created as the task for webMOBI Web Developer Internship position. Hosted at https://admin-dashboard-frontend.netlify.app/
 
 My detail:
 + Mugundan Sridhar 
