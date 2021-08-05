@@ -6,7 +6,7 @@ import "./SideContent.css";
 
 export const SelectedTab = createContext();
 
-function SideContent() {
+function SideContent(props) {
   const [selectedTabIndex, setSelectedTabIndex] = useState(2);
 
   function PaneHeader(props) {
@@ -28,7 +28,7 @@ function SideContent() {
   return (
     <div className="side-content-body">
     <SelectedTab.Provider value={selectedTabIndex}>
-      <PaneHeader heading="Event Settings" />
+      <PaneHeader heading={props.heading} />
       <PaneItem text="General" id={0} onClick={()=>setSelectedTabIndex(0)}/>
       <PaneItem text="Privacy" id={1} onClick={()=>setSelectedTabIndex(1)}/>
       <PaneItem text="Features" id={2} onClick={()=>setSelectedTabIndex(2)}/>

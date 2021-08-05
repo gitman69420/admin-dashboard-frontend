@@ -8,7 +8,7 @@ import './PageContent.css'
 function PageContent() {
     return (
         <div className="page-content-body">
-            <SideContent />
+            <SideContent heading="Event Settings"/>
             <MainContent heading="Audience Q&A" />
         </div>
     )
