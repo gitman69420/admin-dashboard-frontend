@@ -1,0 +1,59 @@
+.form-input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input-container-switch{
+    display: flex;
+    flex-direction: row;
+    margin:1rem 0;
+}
+
+.form-input-label{
+    margin:0.75rem 0;
+    font-size: 1.1em;
+}
+
+.form-input-textbox{
+    font-size:1em;
+    height:1rem;
+    padding:0.75rem;
+    margin:0.25rem 0;
+    max-width:16rem;
+    border-color:#EEEEEE;
+
+    border-radius:0.5rem;
+}
+
+.form-input-select{
+    font-size:1em;
+    height: 2.75rem;
+    padding:0.75rem;
+    margin:0.25rem 0;
+    max-width:16rem;
+    border-color:#EEEEEE;
+
+    border-radius:0.5rem;
+
+    box-shadow: 2px 2px 1px -3px #000000;
+}
+
+.form-input-upload{
+    height:100%;
+    font-size:1em;
+    height:max-content;
+    max-width: 16rem;
+}
+
+.form-input-upload::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.form-input-upload::before{
+    content:'Upload';
+    border-style:solid;
+    border-color:gray;
+    border-width:1px;
+    border-radius: 0.5rem;
+    padding:0.5rem;
+}

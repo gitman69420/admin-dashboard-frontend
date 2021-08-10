@@ -1,9 +1,10 @@
 import React from 'react'
-import Switch from '@material-ui/core/Switch';
+
+import { IOSSwitch } from '../../../../IosStyleSwitch/IosStyleSwitch';
 
 import './SettingItem.css'
 
-function SettingItem({heading, desc, value}) {
+function SettingItem({heading, desc}) {
     return (
         <div className="setting-item">
             <div className="setting-info">
@@ -11,7 +12,7 @@ function SettingItem({heading, desc, value}) {
                 <p className="setting-desc">{desc}</p>
             </div>
             <div className="switch-container">
-                <Switch color="primary" style={{colorPrimary:"green"}}/>
+                <IOSSwitch />
             </div>
         </div>
     )

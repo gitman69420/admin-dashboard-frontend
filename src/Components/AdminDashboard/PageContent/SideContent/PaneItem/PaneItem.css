@@ -3,6 +3,7 @@
     flex-grow:1;
     display:grid;
     grid-template-columns: 0.5rem auto;
+    cursor: pointer;
 }
 
 .pane-item:hover{

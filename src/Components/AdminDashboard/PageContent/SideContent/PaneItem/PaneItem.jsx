@@ -21,7 +21,7 @@ function PaneItem(props) {
       <div
         className="pane-item"
         style={{ backgroundColor: selected === props.id && "#EEE" }}
-        onClick={()=>props.onClick()}
+        onClick={!props.disabled?()=>props.onClick():null}
       >
         <div
           style={

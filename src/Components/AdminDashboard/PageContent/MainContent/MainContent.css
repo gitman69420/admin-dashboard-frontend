@@ -19,3 +19,47 @@
     padding-bottom: 1rem;
     box-shadow: 0 3px 1px -3px #000000;
 }
+
+.form-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "name . ."
+    "company email position"
+    "upload speaker socials"
+    "category . ."
+    "switch . .";
+}
+
+.form{
+    display:flex;
+    flex-direction: column;
+}
+
+.form-tabs{
+    display: flex;
+    flex-direction: row;
+    align-self:flex-start;
+}
+
+.form-top-buttons{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+
+    align-self:flex-end;
+
+    width:fit-content;
+}
+
+.form-bottom-buttons{
+    display: flex;
+    flex-direction: row-reverse;
+    margin:1rem;
+    gap:1rem;
+
+    align-self:flex-end;
+
+    width:fit-content;
+}

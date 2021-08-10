@@ -1,0 +1,55 @@
+.primary-button-1{
+
+    box-shadow: 3px 3px 4px -3px #000000;
+    color:white;
+    background-color: #c927e9;
+    border-style: none;
+    border-radius: 0.5rem;
+    padding:0.5rem 0.5rem;
+    min-width: 8rem;
+}
+
+.primary-button-1:hover{
+    background-color:white;
+    color: #c927e9;
+}
+
+.secondary-button-1{
+
+    box-shadow: 3px 3px 4px -3px #000000;
+    color:black;
+    background-color: white;
+    border-style: none;
+    border-radius: 0.5rem;
+    padding:0.5rem 0.5rem;
+    min-width: 8rem;
+
+}
+
+.primary-button-2{
+
+    box-shadow: 3px 3px 4px -3px #000000;
+    color:white;
+    background-color: #c927e9;
+    border-style: none;
+    border-radius: 0.5rem;
+    padding:0.75rem 0.5rem;
+    min-width: 8rem;
+}
+
+.primary-button-2:hover{
+    background-color:white;
+    color: #c927e9;
+}
+
+.secondary-button-2{
+
+    box-shadow: 3px 3px 4px -3px #000000;
+    color:black;
+    background-color: white;
+    border-style: none;
+    border-radius: 0.5rem;
+    padding:0.75rem 0.5rem;
+    min-width: 8rem;
+
+}

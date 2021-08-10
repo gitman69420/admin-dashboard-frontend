@@ -1,13 +1,23 @@
-import React, { useState, createContext } from "react";
+import React, { useState, createContext, useContext } from "react";
 
 import PaneItem from "./PaneItem/PaneItem";
+
+import {
+  NavListSubheadings,
+  NavigationContext,
+} from "../PageContentNavigationContext";
 
 import "./SideContent.css";
 
 export const SelectedTab = createContext();
+export const SelectTab = createContext();
 
 function SideContent(props) {
   const [selectedTabIndex, setSelectedTabIndex] = useState(2);
+
+  const navIndex = useContext(NavigationContext);
+
+  const tabsList = NavListSubheadings[navIndex];
 
   function PaneHeader(props) {
     const headingContainerStyle = {
@@ -23,21 +33,27 @@ function SideContent(props) {
     );
   }
 
-
-
   return (
-    <div className="side-content-body">
-    <SelectedTab.Provider value={selectedTabIndex}>
-      <PaneHeader heading={props.heading} />
-      <PaneItem text="General" id={0} onClick={()=>setSelectedTabIndex(0)}/>
-      <PaneItem text="Privacy" id={1} onClick={()=>setSelectedTabIndex(1)}/>
-      <PaneItem text="Features" id={2} onClick={()=>setSelectedTabIndex(2)}/>
-      <PaneItem text="Customization" id={3} onClick={()=>setSelectedTabIndex(3)}/>
-      <PaneItem text="Integration" id={4} onClick={()=>setSelectedTabIndex(4)}/>
-      <PaneItem text="Session Settings" id={5} disabled onClick={()=>setSelectedTabIndex(5)}/>
-      <PaneItem text="My plans" id={6} onClick={()=>setSelectedTabIndex(6)}/>
+    <>
+      <SelectedTab.Provider value={selectedTabIndex}>
+      <SelectTab.Provider value={setSelectedTabIndex}>
+        <div className="side-content-body">
+          <PaneHeader heading={props.heading} />
+          {tabsList.map((item, index) => {
+            return (
+              <PaneItem
+                text={item.titleName}
+                disabled={item.disabled}
+                id={index}
+                onClick={() => setSelectedTabIndex(index)}
+              />
+            );
+          })}
+        </div>
+        {props.children}
+        </SelectTab.Provider>
       </SelectedTab.Provider>
-    </div>
+    </>
   );
 }
 

@@ -1,0 +1,14 @@
+.navbar-divider{
+    height:30%;
+    width:0.15rem;
+    background-color: grey;
+    margin:0 0.5rem;
+}
+
+.admin-navbar-container{
+    display: flex;
+    flex-direction: row;
+    gap:0.25rem;
+    align-items: center;
+    padding:0 1rem;
+}
